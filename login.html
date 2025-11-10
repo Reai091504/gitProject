@@ -8,19 +8,19 @@
 </head>
 <body>
     <div class="login-container">
-    <h2>Login</h2>
-    <div class="input-group">
-        <label>Username</label>
-        <input type="text" placeholder="Enter username">
-    </div>
-    <div class="input-group">
-        <label>Password</label>
-        <input type="password" placeholder="Enter password">
-    </div>
-    <button>Login</button>
-    <div id="error-message"></div>
-</div>
-
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error-message"></p>
+        </form>
     </div>
 
     <script src="script.js"></script>
